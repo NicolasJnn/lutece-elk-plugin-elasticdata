@@ -324,7 +324,7 @@ public class ManageElasticDataJspBean extends AbstractManageJspBean<Integer, Ind
      * @param request The Http request
      * @return the html code to confirm
      */
-    @Action( value = ACTION_CONFIRM_REMOVE_INDEXERACTION, securityTokenAction = ACTION_REMOVE_INDEXERACTION )
+    @Action( value = ACTION_CONFIRM_REMOVE_INDEXERACTION, securityTokenAction = ACTION_REMOVE_INDEXERACTION, securityTokenDisabled = true )
     public String getConfirmRemoveIndexerAction( HttpServletRequest request )
     {
         int nId = Integer.parseInt( request.getParameter( PARAMETER_ID_INDEXERACTION ) );
